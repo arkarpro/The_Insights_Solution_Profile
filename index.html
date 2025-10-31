@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Insights Solution - Data Strategy & Training</title>
+    <style>
+        /* Basic CSS for a clean, professional look */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        /* NEW Header Styles (Request 1) */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 5px solid #007bff; /* Blue top border */
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+        }
+        .header-text {
+            text-align: right;
+        }
+        .header-text h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.2em;
+        }
+        .contact-info {
+            font-size: 1.1em;
+            color: #555;
+            margin: 5px 0 0 0;
+        }
+        
+        /* Vision & Mission Cards */
+        .statements {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .statement-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        /* NEW Border Colors (Request 1) */
+        .statement-card:nth-child(1) {
+            border-top: 5px solid #ffc107; /* Yellow border */
+        }
+        .statement-card:nth-child(2) {
+            border-top: 5px solid #e83e8c; /* Pink border */
+        }
+        .statement-card h3 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        /* NEW Section Styling (Request 3) */
+        section {
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden; /* Important for header border radius */
+        }
+        /* NEW Section Header (h2) Style (Request 3) */
+        h2 {
+            font-size: 1.8em;
+            color: #ffffff; /* White text */
+            background-color: #34495e; /* Dark blue-grey header */
+            padding: 15px 25px;
+            margin: 0;
+        }
+        /* NEW Section Content Padding */
+        .section-content {
+            padding: 25px;
+        }
+        h3 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin-top: 25px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        
+        /* Profile Image Styles (Request 2) */
+        .profile-image {
+            float: right;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            max-width: 300px; /* Increased max-width slightly */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Expertise Table Style */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .social-links a {
+            font-size: 1.1em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #0056b3;
+        }
+        .footer-credit {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+            margin: 20px 0 10px 0;
+        }
+        .copyright {
+            font-size: 0.9em;
+            color: #777;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="images/logo.png" alt="The Insights Solution Logo" class="logo">
+            
+            <div class="header-text">
+                <h1>The Insights Solution</h1>
+                <p class="contact-info">Arkarlinn@insights-mm.com | +959 425 320 949</p>
+            </div>
+        </header>
+
+        <section class="statements">
+            <div class="statement-card">
+                <h3>☀️ Vision Statement</h3>
+                <p>Empowering smarter decisions through data-driven insights.</p>
+            </div>
+            <div class="statement-card">
+                <h3>🎯 Mission Statement</h3>
+                <p>Helping professionals and businesses unlock the power of data with practical Excel & Power BI training, ready-to-use templates, and tailored analytics solutions.</p>
+            </div>
+        </section>
+
+        <section id="about" class="clearfix">
+            <h2>👨‍💼 About the Founder</h2>
+            <div class="section-content">
+                
+                <img src="images/profile.jpg" alt="Arkar Linn - Data Strategist" class="profile-image">
+                
+                <p>
+                    I am a Senior Executive on the Leadership Team of a major international finance organization, where I advise the CEO and Board on nationwide operational strategy across 50+ branches.
+                </p>
+                <p>
+                    My career hasn't just been about <em>analyzing</em> data; it's been about <em>building</em> the institutional systems that deliver it. I have personally <strong>pioneered and directed the implementation of a nationwide credit recovery system</strong> and <strong>implemented the automated Power BI dashboards</strong> that drive executive decision-making.
+                </p>
+                <p>
+                    After more than five years of training internal staff at a corporate level, I launched my own consultancy and training business to bring this same high-level expertise to a wider audience. In just four months, my part-time venture has:
+                </p>
+                <ul>
+                    <li>Trained <strong>over 100 students</strong> in advanced data skills.</li>
+                    <li>Been trusted to deliver corporate training for one of <strong>Myanmar's largest holding groups (Mottama)</strong>.</li>
+                    <li>Begun developing <strong>cloud-based data systems</strong> for international clients, including a company in <strong>Singapore</strong>.</li>
+                </ul>
+                <p>
+                    I bridge the gap between technical data skills and executive business strategy. I don't just teach formulas; I teach how to manage risk, drive growth, and deliver real P&L impact.
+                </p>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>💼 My Services</h2>
+            <div class="section-content">
+                <p>I help organizations and individuals build a true data-driven culture through three core services:</p>
+                
+                <h3>Strategic Corporate Training:</h3>
+                <p>
+                    Bespoke data upskilling programs for your teams, specializing in Power BI and Advanced Excel. My training is unique because it's delivered from the perspective of a senior manager who understands your business challenges and P&L pressures.
+                </p>
+                <p>
+                    <strong>Ready to master Power BI?</strong> 
+                    <a href="https://arkarpro.github.io/Power-BI-Basic-to-Master-Course-Outline/" target="_blank" style="font-weight: bold;">
+                        View the complete Power BI Basic to Master Course Outline here.
+                    </a>
+                </p>
+
+                <h3>Cloud BI System Development:</h3>
+                <p>
+                    I design and deploy end-to-end, automated reporting systems using Power BI and Excel. I turn your messy operational data into a single source of truth that provides clear, actionable insights for your leadership team.
+                </p>
+
+                <h3>Custom Templates & Support:</h3>
+                <p>
+                    Creating customized, high-performance Excel or Power BI templates to solve your specific operational, financial, or portfolio management challenges.
+                </p>
+            </div>
+        </section>
+
+        <section id="foundation">
+            <h2>🏛️ My Professional Foundation</h2>
+            <div class="section-content">
+                <p>My services are built on a foundation of real-world, high-stakes experience:</p>
+                <ul>
+                    <li><strong>Senior Executive (Operations) | VisionFund Myanmar:</strong> A Senior Leadership Team member guiding nationwide strategy and advising the CEO/Board.</li>
+                    <li><strong>Proven Systems Architect:</strong> Successfully pioneered and deployed a complex, nationwide credit recovery system from the ground up.</li>
+                    <li><strong>International & Finance Expertise:</strong> Over 10 years of experience in Finance, Credit Risk, and Portfolio Management at a Korean bank (KB Microfinance) and a global MFI (VisionFund), collaborating with teams from the US, Austria, and Asia.</li>
+                    <li><strong>Experienced Internal Trainer:</strong> Over 5 years of experience developing and training local staff in data analysis and system management.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="expertise">
+            <h2>📊 Core Expertise</h2>
+            <div class="section-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Business & Strategy</th>
+                            <th>Technical Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data-Driven Decision Making</td>
+                            <td>Microsoft Power BI</td>
+                        </tr>
+                        <tr>
+                            <td>P&L and Financial Performance</td>
+                            <td>Advanced Excel (Power Query, DAX)</td>
+                        </tr>
+                        <tr>
+                            <td>Credit Risk & Portfolio Management</td>
+                            <td>SQL Database Management</td>
+                        </tr>
+                        <tr>
+                            <td>Organizational Leadership</td>
+                            <td>Business Performance Dashboards</td>
+                        </tr>
+                        <tr>
+                            <td>Business Continuity & Risk</td>
+Services
+                            <td>Operational Management Systems (MIS)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.facebook.com/arkar.linn.ceo/" target="_blank">Facebook</a>
+                <a href="https://youtube.com/@datainsightswitharkar" target="_blank">YouTube</a>
+                <a href="https://github.com/arkarpro" target="_blank">GitHub</a>
+            </div>
+            
+            <p class="footer-credit">Powered by Data Insights with Arkar</p>
+            <p class="copyright">© 2025 The Insights Solution. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
